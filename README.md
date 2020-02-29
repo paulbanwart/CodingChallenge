@@ -1,6 +1,6 @@
 Part 1
 
-For your convenience, I added an export of my postman collection to test the api/encode endpoint, if you don't already have one. It can be found under Potman/LightFeather.postman_collection.json. Run this solution in Visual Studio ideally. Then test the endpoint with different Shift and Message combinations. Successfully encoded messages are saved to /EncodedMessages. You may need to setup files permission to save to disk.
+For your convenience, I added an export of my postman collection to test the api/encode endpoint, if you don't already have one. It can be found under Postman/LightFeather.postman_collection.json. Run this solution in Visual Studio ideally. Then test the endpoint with different Shift and Message combinations. Successfully encoded messages are saved to /EncodedMessages. You may need to setup files permission to save to disk.
 
 
 Part 2
