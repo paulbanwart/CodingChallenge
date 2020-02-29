@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "0a5fd616-a2c2-4b6b-9a57-f3d143312f5c",
+		"name": "LightFeather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:23456/api/encode",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"message\":\"a b c\", \"shift\":2 }"
+				},
+				"url": {
+					"raw": "http://localhost:23456/api/encode",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "23456",
+					"path": [
+						"api",
+						"encode"
+					]
+				},
+				"description": "Test Ceasar Encodin. Go to 'Body' tab of Postman. Adjust the \"message\" and \"shift\" property values as wanted."
+			},
+			"response": []
+		}
+	]
+}
