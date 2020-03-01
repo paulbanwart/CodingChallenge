@@ -23,11 +23,6 @@ namespace CodingTest_LF.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
         public IActionResult Register()
         {
             return View();
