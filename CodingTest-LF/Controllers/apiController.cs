@@ -70,9 +70,6 @@ namespace CodingTest_LF.Controllers
 
         private bool SaveToFile(EncodedMessageModel encodedMessage)
         {
-            string hello = Path.Combine("/EncodedMessages", "EncodedMessages.txt");
-            string what = "EncodedMessages.txt";
-
             try { 
             using (StreamWriter outputFile = new StreamWriter(Path.Combine("EncodedMessages", "EncodedMessages.txt")))
             {
