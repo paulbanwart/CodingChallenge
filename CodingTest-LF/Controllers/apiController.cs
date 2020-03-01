@@ -70,8 +70,21 @@ namespace CodingTest_LF.Controllers
 
         private bool SaveToFile(EncodedMessageModel encodedMessage)
         {
+            string hello = Path.Combine("/EncodedMessages", "EncodedMessages.txt");
+            string what = "EncodedMessages.txt";
 
-            return true;
+            try { 
+            using (StreamWriter outputFile = new StreamWriter(Path.Combine("EncodedMessages", "EncodedMessages.txt")))
+            {
+                    outputFile.WriteLine(encodedMessage.EncodedMessage);
+                    return true;
+            }
+           }
+            catch 
+            {
+                //if you move the EncodedMessages.txt file to a different file path or rename the file, you'll end up here. Your message was not saved, so you'll be recieving an empty string in the response.
+                return false;
+            }
 
         }
     }
