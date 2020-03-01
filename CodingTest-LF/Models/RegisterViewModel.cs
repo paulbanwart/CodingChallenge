@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
@@ -23,6 +24,7 @@ namespace CodingTest_LF.Models
         public string Password { get; set; }
 
         [Required(ErrorMessage = "Confirm Password is required")]
+        [DisplayName("Confirm Password")]
         [StringLength(128, ErrorMessage = "Password must be between 5 and 128 characters and match", MinimumLength = 5)]
         [DataType(DataType.Password)]
         [Compare("Password")]
